@@ -11,7 +11,6 @@ import kotlinx.coroutines.flow.flowOn
 
 class RemoteDataSource(
     private val apiService: ApiService,
-    private val ioDispatcher: CoroutineDispatcher = Dispatchers.IO // inject dispatchers
 ) {
 
     suspend fun getUsersByUsername(username: String): Flow<ApiResponse<List<UserResponse>>> {
@@ -27,7 +26,7 @@ class RemoteDataSource(
             } catch (e: Exception) {
                 emit(ApiResponse.Error(e.toString()))
             }
-        }.flowOn(ioDispatcher)
+        }.flowOn(Dispatchers.IO)
     }
 
     suspend fun getUserDetail(username: String): Flow<ApiResponse<UserResponse>> {
@@ -38,7 +37,7 @@ class RemoteDataSource(
             } catch (e: Exception) {
                 emit(ApiResponse.Error(e.toString()))
             }
-        }.flowOn(ioDispatcher)
+        }.flowOn(Dispatchers.IO)
     }
 
     suspend fun getUserFollowing(username: String): Flow<ApiResponse<List<UserResponse>>> {
@@ -54,7 +53,7 @@ class RemoteDataSource(
             } catch (e: Exception) {
                 emit(ApiResponse.Error(e.toString()))
             }
-        }.flowOn(ioDispatcher)
+        }.flowOn(Dispatchers.IO)
     }
 
     suspend fun getUserFollowers(username: String): Flow<ApiResponse<List<UserResponse>>> {
@@ -70,7 +69,7 @@ class RemoteDataSource(
             } catch (e: Exception) {
                 emit(ApiResponse.Error(e.toString()))
             }
-        }.flowOn(ioDispatcher)
+        }.flowOn(Dispatchers.IO)
     }
 
 }

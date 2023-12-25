@@ -15,13 +15,17 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
-        buildConfigField("String", "KEY", '"token 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"')
+        buildConfigField("String", "KEY", '"token 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"')
         buildConfigField("String", "BASE_URL", '"https://api.github.com/"')
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -57,4 +61,8 @@ dependencies {
 
     //datastore
     implementation "androidx.datastore:datastore-preferences:$datastore_version"
+
+    //db
+    implementation "net.zetetic:android-database-sqlcipher:4.4.0"
+    implementation "androidx.sqlite:sqlite-ktx:2.1.0"
 }

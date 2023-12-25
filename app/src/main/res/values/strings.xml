@@ -8,6 +8,8 @@
     <string name="title_favorite">Favorite</string>
     <string name="name">Github Name</string>
     <string name="tab_layout">Tab layout</string>
+    <string name="power_connected">Power connected!</string>
+    <string name="power_disconnected">Power disconnected!</string>
 
     <!-- State -->
     <string name="empty_search">Data tidak ditemukan, silakan cari user</string>
@@ -15,10 +17,6 @@
     <string name="empty_data">Tidak ada data</string>
 
     <!-- Followers/following -->
-    <string name="followers">Followers</string>
-    <string name="following">Following</string>
-    <string name="followers_tab">Followers</string>
-    <string name="following_tab">Following</string>
     <string name="followers_number">0 Followers</string>
     <string name="following_number">0 Following</string>
 

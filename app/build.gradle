@@ -17,6 +17,7 @@ android {
         versionCode 1
         versionName "1.0"
 
+        consumerProguardFiles "consumer-rules.pro"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -47,4 +48,6 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "com.google.android.material:material:$material_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.12'
 }
