@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Submisi Made</string>
+    <string name="username_github">Github Username</string>
+    <string name="favorite">Favorite List</string>
+    <string name="search">Search</string>
+    <string name="search_placeholder">Masukkan kata</string>
+    <string name="detail">Detail User</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="name">Github Name</string>
+    <string name="tab_layout">Tab layout</string>
+
+    <!-- State -->
+    <string name="empty_search">Data tidak ditemukan, silakan cari user</string>
+    <string name="error_state">Error, periksa internet Anda</string>
+    <string name="empty_data">Tidak ada data</string>
+
+    <!-- Followers/following -->
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="followers_tab">Followers</string>
+    <string name="following_tab">Following</string>
+    <string name="followers_number">0 Followers</string>
+    <string name="following_number">0 Following</string>
+
+</resources>
