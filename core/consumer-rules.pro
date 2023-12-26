@@ -19,6 +19,9 @@
 -keep class com.cakrapand.core.data.source.remote.response.UserResponse{
     *;
 }
+-keep class com.cakrapand.core.data.source.remote.response.GithubResponse{
+    *;
+}
 
 # Prevent proguard from stripping interface information from TypeAdapter, TypeAdapterFactory,
 # JsonSerializer, JsonDeserializer instances (so they can be used in @JsonAdapter)
