@@ -15,7 +15,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
-        buildConfigField("String", "KEY", '"token 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"')
+        buildConfigField("String", "KEY", '"token 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"')
         buildConfigField("String", "BASE_URL", '"https://api.github.com/"')
     }
 
