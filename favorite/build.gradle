@@ -31,6 +31,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    // Define a custom task that depends on extractProguardFiles
+    task customExportReleaseTask {
+        dependsOn tasks.extractProguardFiles
+        doLast {
+            // Additional custom actions if needed
+        }
+    }
 }
 
 dependencies {
